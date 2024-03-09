@@ -15,7 +15,7 @@ def to_array_string(board):
 class PrologService:
 
     def __init__(self):
-        self.base_url = "http://localhost:8080"
+        self.base_url = "http://localhost:8079"
 
     def generate_board(self, difficulty, size):
         response = requests.get(f"{self.base_url}/generate-board", params={'difficulty': difficulty, 'size': size})
